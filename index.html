@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Libros y Autores</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1>Gestión de Libros</h1>
+      <button id="btn-ver-libros">Ver Libros</button>
+      <button id="btn-agregar-libro">Agregar Libro</button>
+      <button id="btn-agregar-autor">Agregar Autor</button>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+
+      <!-- Lista de libros -->
+      <section id="libros" class="seccion active">
+        <h2>Libros</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Autor</th>
+              <th>Año</th>
+              <th>Cantidad</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="lista-libros"></tbody>
+        </table>
+      </section>
+
+      <!-- Formulario Libro -->
+      <section id="formulario-libro" class="seccion" style="display: none;">
+        <h2>Agregar Libro</h2>
+        <form id="form-libro">
+          <label>Título:</label>
+          <input type="text" id="titulo" required /><br />
+
+          <label>Autor:</label>
+          <select id="autor" required></select><br />
+
+          <label>Año de Publicación:</label>
+          <input type="number" id="ano_publicacion" required /><br />
+
+          <label>Cantidad Disponible:</label>
+          <input type="number" id="cantidad" required /><br />
+
+          <button type="submit">Guardar</button>
+        </form>
+      </section>
+
+      <!-- Formulario Autor -->
+      <section id="formulario-autor" class="seccion" style="display: none;">
+        <h2>Agregar Autor</h2>
+        <form id="form-autor">
+          <label>Nombre:</label>
+          <input type="text" id="nombre-autor" required /><br />
+
+          <label>Apellido:</label>
+          <input type="text" id="apellido-autor" required /><br />
+          
+          <label>Nacionalidad:</label>
+          <input type="text" id="nacionalidad-autor" required /><br />
+
+          <button type="submit">Guardar</button>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
+
