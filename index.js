@@ -4,7 +4,7 @@ const formularioAutorSection = document.getElementById('formulario-autor');
 
 let libroEditandoId = null;
 
-const API_BASE_URL = 'backend-libreria-production-86b3.up.railway.app';
+const API_BASE_URL = 'https://backend-libreria-production-86b3.up.railway.app';
 
 //Mostrar la sección seleccionada
 function mostrarSeccion(seccion) {
